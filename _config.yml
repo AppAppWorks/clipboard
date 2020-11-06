@@ -1,0 +1,117 @@
+#page title
+page_title                                : Aloud! - Text to Speech | AppAppWorks                                          # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+
+# App Info
+ios_app_id                                : 852033350                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+
+appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+playstore_link                            :                                           # Enter Google Play Store URL.
+presskit_download_link                    :                                          # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
+                                                                                      # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
+
+app_icon                                  : /aloud/assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
+app_name                                  : Aloud! - Text to Speech                                        # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_price                                 : Free                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_description                           : Listen to PDF, eBook and News!
+
+enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
+
+
+
+# Information About Yourself
+your_name                                 : AppAppWorks                                
+your_link                                 : https://appappworks.com                     
+your_city                                 : Hong Kong                                
+email_address                             : info@appappworks.com
+facebook_username                         : appappworks                                          
+instagram_username                        : 
+twitter_username                          : appappworks
+github_username                           : 
+youtube_username                          :
+
+
+
+# Feature List                            Edit, add or remove features to be presented.
+features                                  :
+
+  - title                                 : Multi-language Support
+    description                           : Aloud! supports multiple languages, including English, Spanish, German, Portuguese, etc. Whether you're a native speaker or a language learner, Aloud! has you covered. 
+    fontawesome_icon_name                 : language
+    
+  - title                                 : Multi-format Support
+    description                           : Aloud! supports numerous popular text formats. Not only PDF, ePub, docx, iWork Pages files are supported, you can also import webpages into Aloud!
+    fontawesome_icon_name                 : file
+
+  - title                                 : Control Reading Progress, Speed and Pitch
+    description                           : Aloud! highlights the current reading progress for your easy following. At anytime, you can skip to whatever section you like, or adjust the reading speed or pitch as you prefer.
+    fontawesome_icon_name                 : play-circle
+
+  - title                                 : Save Texts and Progress
+    description                           : Aloud! automatically saves your progress as you listen to the text, you may stop and resume reading whenever you like.
+    fontawesome_icon_name                 : save
+
+
+
+# Theme Settings
+topbar_color                              : "#000000"
+topbar_transparency                       : 0.1
+topbar_title_color                        : "#ffffff"
+
+cover_image                               : /aloud/assets/books_between_headphone-min.jpg                    # Replace with alternative image path or image URL.
+cover_overlay_color                       : "#363b3d"
+cover_overlay_transparency                : 0.8
+
+device_color                              : black                                     # Set to: blue, black, yellow, coral or white.
+
+body_background_color                     : "#56c7f1"
+
+link_color                                : "#666666"
+
+app_title_color                           : "#ffffff"
+app_price_color                           : "#ffffff"
+app_description_color                     : "#ffffff"
+
+feature_title_color                       : "#ffffff"
+feature_text_color                        : "#e6e6e6"
+
+feature_icons_foreground_color            : "#56c7f1"
+feature_icons_background_color            : "#e6e6e6"
+
+social_icons_foreground_color             : "#666666"
+social_icons_background_color             : "#e6e6e6"
+
+footer_text_color                         : "#e6e6e6"
+
+
+
+
+
+
+
+
+
+
+
+
+
+####################################################
+### Jekyll Configuration. No need to touch this. ###
+####################################################
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :compressed # You might prefer to minify using :compressed
+
+# Exclude these files from your production _site
+exclude:
+  - LICENSE
+  - README.md
+  - CNAME
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Markdown rendering
+markdown: kramdown
