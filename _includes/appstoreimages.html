@@ -14,9 +14,13 @@ $(function() {
 
             console.info("Image strings loaded from Apple API.");
             var appInfo = json.results[0];
+            
+            var $appIconLarge = $(".appIconLarge");
+            var $appIconHeader = $(".headerIcon");
 
             // Set favicon
-            $('link[rel="shortcut icon"]').attr("href", appInfo.artworkUrl512);
+            var faviconUrl = $appIconHeader.attr('src') || $appIconLarge.attr('src') || appInfo.artworkUrl512;
+            $('link[rel="shortcut icon"]').attr("href", faviconUrl);
 
             // Set page title using the iOS app ID if it is not set manually in _config.yml
             var $pageTitle = $(".pageTitle");
@@ -25,13 +29,11 @@ $(function() {
             }
 
             // Set large app icon using the iOS app ID if it is not set manually in _config.yml
-            var $appIconLarge = $(".appIconLarge");
             if (!$appIconLarge.attr('src')) {
                 $($appIconLarge).attr("src", appInfo.artworkUrl512);
             }
 
             // Set header app icon using the iOS app ID if it is not set manually in _config.yml
-            var $appIconHeader = $(".headerIcon");
             if (!$appIconHeader.attr('src')) {
                 $($appIconHeader).attr("src", appInfo.artworkUrl512);
             }

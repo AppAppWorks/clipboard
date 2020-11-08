@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Privacy Policy for Aloud! - Text to Speech
+title: Privacy Policy for +Clipboard
 include_in_header: false
 ---
 
 # Privacy Policy
-This privacy policy governs your use of the software application Aloud! - Text to Speech (“Application”) for mobile devices that was created by AppAppWorks. The Application is&nbsp;a text to speech reader that synthesizes speech from plain text supporting several languages. Users can import text in various formats like PDF, DOCX, EPUB and etc, and have the contents and reading progresses stored for easy access.&nbsp; 
+This privacy policy governs your use of the software application +Clipboard (“Application”) for mobile devices that was created by AppAppWorks. The Application is a digital clipboard that enables convenient storage and retrieval of clips containing text and images. 
 
 ## What information does the Application obtain and how is it used?
 
