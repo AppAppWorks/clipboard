@@ -1,0 +1,21 @@
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "MobileApplication",
+      "name": "{{ site.app_name }}",
+      {% if site.app_category %}"applicationCategory": "{{ site.app_category }}",{% endif %}
+      "downloadUrl": "{{ site.url }}{{ site.baseurl }}/referrer/",
+      "operatingSystem": "{% if site.playstore_link %}Android {% endif %}{% if site.ios_app_id || site.appstore_link %}iOS{% endif %}",
+      {% if site.app_description %}"abstract": "{{ site.app_description }}",{% endif %}
+      "author": {
+          "email": "{{ site.email_address }}",
+          "location": "Hong Kong",
+          "slogan": "Works on excellent apps!",
+          "image": "{{ site.your_link }}/assets/images/logo.png",
+          "name": "AppAppWorks",
+          "url": "{{ site.your_link }}"
+      },
+      "thumbnailUrl": "{{ site.url }}{{ site.baseurl }}/{{ site.app_icon }}",
+      "image": "{{ site.url }}{{ site.baseurl }}/{{ site.app_icon }}"
+    }
+</script>
