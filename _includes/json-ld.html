@@ -8,6 +8,7 @@
       "operatingSystem": "{% if site.playstore_link %}Android {% endif %}{% if site.ios_app_id || site.appstore_link %}iOS{% endif %}",
       {% if site.app_description %}"abstract": "{{ site.app_description }}",{% endif %}
       "author": {
+          "@type": "Organization",
           "email": "{{ site.email_address }}",
           "location": "Hong Kong",
           "slogan": "Works on excellent apps!",
